@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: "vkbot"
+  config:
+    import: optional:file:.env[.properties]
+
+
+vk:
+  token: ${VK_TOKEN}
+  confirmation: ${CONFIRMATION_CODE}
+  secret: ${SECRET_KEY}
+
+server:
+  port: 8080
+
+
